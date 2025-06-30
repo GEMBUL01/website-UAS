@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transaksi Pinjaman Uang</title>
+  <link rel="stylesheet" href="transaksi.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Form Transaksi Pinjaman Uang</h2>
+    <form id="loanForm">
+      <label for="name">Nama Peminjam:</label>
+      <input type="text" id="name" required>
+
+      <label for="amount">Jumlah Pinjaman (Rp):</label>
+      <input type="number" id="amount" required>
+
+      <label for="duration">Durasi Pinjaman (bulan):</label>
+      <input type="number" id="duration" required>
+
+      <label for="interest">Bunga per Bulan (%):</label>
+      <input type="number" id="interest" value="2" required>
+
+      <button type="submit">Proses Pinjaman</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="transaksi.js"></script>
+</body>
+</html>
